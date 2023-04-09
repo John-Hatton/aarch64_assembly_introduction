@@ -31,7 +31,7 @@ _start:
 	MOV x8, #0x1 
 
 
-	// This corresponds with ARMv7 sww, and is called the SuperVisor Call.
+	// This corresponds with ARMv7 swi, and is called the SuperVisor Call.
 	// SVC of 0 corresponds to disabling the priveleged mode.
 
 	SVC 0
