@@ -32,8 +32,11 @@ _start:
 
 
 	// This corresponds with ARMv7 swi, and is called the SuperVisor Call.
-	// SVC of 0 corresponds to disabling the priveleged mode.
+	// Invoke a software interrupt, which transfers control to the 
+	// operating system kernel and triggers the system call handling routine 
+	// to perform an action. In this case, the action is to terminate the 
+	// program and return an exit status code to the calling process.
 
-	SVC 0
+	SVC #0
 
 .section .data
