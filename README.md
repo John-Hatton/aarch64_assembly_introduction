@@ -35,7 +35,7 @@ of the packages I selected to assemble, link, and test this project, as well as 
 
 
 
-as -g -o <filename>.o <filename>.s -march=armv8-a
+as -g -o '<filename>'.o '<filename>'.s -march=armv8-a
 
 ---
 
@@ -46,7 +46,7 @@ as -g -o <filename>.o <filename>.s -march=armv8-a
 
 
 
-ld -o <filename> <filename>.o
+ld -o '<filename>' '<filename>'.o
 
 ---
 
@@ -56,7 +56,7 @@ ld -o <filename> <filename>.o
 
 
 
-gdb <filename>
+gdb '<filename>'
 
 
 
